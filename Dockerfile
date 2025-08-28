@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y build-essential
 #unixodbc-dev curl && rm -rf /var/lib/apt/lists/*
 
 # Install Poetry
-RUN pip install  poetry
+RUN pip install poetry
 
 # Set Poetry configuration
 ENV POETRY_HOME=/opt/poetry
