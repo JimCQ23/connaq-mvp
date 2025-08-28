@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "connaq"
+version = "0.1.0"
+description = "FastAPI app with raw SQL Server (pyodbc) and OpenAI integration"
+authors = ["Zahra30-coder <syedafaq.hu322@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "0.110.2"
+uvicorn = "0.29.0"
+pydantic = { version = "2.11.7", extras = ["email"] }
+pydantic-settings = "2.2.1"
+httpx = "0.27.0"
+python-jose = "3.3.0"
+passlib = "1.7.4"
+bcrypt = "4.0.1"
+dspy-ai = { version = "2.6.27", python = ">=3.10,<3.14" }
+openai = "1.98.0"
+pyodbc = "4.0.39"
+python-dotenv = ">=1.1.1,<2.0.0"
+email-validator = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
